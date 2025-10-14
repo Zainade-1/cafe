@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra de Producto - La Esquina del Grano</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Carpeta para los diseños/parte de la compra1.css">
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4 text-primary">Confirmar Pedido</h1>
+
+    <!-- Detalles del producto -->
+    <div class="card mb-4 shadow-sm">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="fotos/Café robusta.png" class="img-fluid rounded-start" alt="Capuchino">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Cafe Robusta</h5>
+            <p class="card-text">Café de sabor fuerte y amargo, con alto contenido de cafeína. Cultivado en climas cálidos, es perfecto para quienes buscan una bebida intensa y energética. Su cuerpo robusto lo hace ideal para mezclas y preparaciones concentradas.</p>
+            <p class="card-text"><strong>Precio:</strong> $4.46</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de compra -->
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez">
+        </div>
+        <div class="col-md-6">
+          <label for="telefono" class="form-label">Número de teléfono</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="Ej. 8888-8888">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección de entrega</label>
+        <textarea class="form-control" id="direccion" rows="2" placeholder="Ej. Barrio Guadalupe, casa color café..."></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="notas" class="form-label">Notas adicionales</label>
+        <textarea class="form-control" id="notas" rows="2" placeholder="Ej. No timbres, tengo bebé dormido."></textarea>
+      </div>
+
+      <!-- Método de pago -->
+      <div class="mb-3">
+        <label class="form-label">Forma de pago</label>
+        <select class="form-select">
+          <option selected>Selecciona una opción</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="tarjeta">Tarjeta al recibir</option>
+          <option value="transferencia">Transferencia bancaria</option>
+        </select>
+      </div>
+
+      <!-- Confirmación -->
+      <div class="text-end">
+        <p class="fs-5"><strong>Total a pagar:</strong> $4.58</p>
+        <button type="submit" class="btn btn-success">Confirmar Pedido</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

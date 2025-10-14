@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA ESQUINA DEL GRANO</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="Carpeta para los diseños/de la empresa.css">
+    <link rel="icon" href="fotos/cafeteria.png" type="image/png">
+
+    <!-- Estilo adicional para imágenes del carrusel -->
+    <style>
+      .carousel-item img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <a href="Pagina principal.html">Inicio</a>
+      <a target="_blank" href="Pagina2.html">Biografía</a>
+      <a href="Pagina 3 for.html">Formulario de trabajo</a>
+      <a href="cafeteria.html">Mi empresa</a>
+    </nav>
+
+    <!-- Encabezado -->
+    <div class="encabezado">
+      <img src="fotos/cafeteria.png" alt="Logo de la cafetería" class="img">
+      <h1 class="titulo">LA ESQUINA DEL GRANO</h1>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="contenido">
+      <!-- Acerca de Nosotros -->
+      <div class="art">
+        <h2>ACERCA DE NOSOTROS</h2>
+
+        <div class="cuadro">
+          <h2>
+            <img src="https://cdn-icons-png.flaticon.com/128/11988/11988678.png" width="30" alt="Misión"> Misión
+          </h2>
+          <h3>¿Cuál es nuestro objetivo?</h3>
+          <p>
+            Ofrecer una experiencia auténtica y acogedora que celebre los sabores,
+            colores y tradiciones de Nicaragua, a través de un menú artesanal,
+            un ambiente cuidadosamente diseñado y un servicio cálido que conecte 
+            con la comunidad local y los visitantes.
+          </p>
+        </div>
+
+        <div class="cuadro">
+          <h2>
+            <img src="https://cdn-icons-png.flaticon.com/128/2571/2571620.png" width="30" alt="Visión"> Visión
+          </h2>
+          <h3>¿Qué pretendemos con este negocio?</h3>
+          <p>
+            Pretendemos crear un espacio que no solo ofrezca café de calidad y productos 
+            artesanales, sino que también se convierta en un punto de encuentro cultural 
+            donde se celebre la identidad nicaragüense. Buscamos fomentar el sentido de 
+            comunidad, apoyar a productores locales, y brindar una experiencia sensorial 
+            que conecte el sabor, el diseño y la tradición en cada rincón de nuestra cafetería.
+          </p>
+        </div>
+
+        <!--Carrusel de productos debajo de misión y visión-->
+        <div class="mt-4">
+          <h2 class="text-center">Galería de Productos</h2>
+          <div id="carruselProductos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                  <img src="fotos/cafe.png" alt="Café Geisha">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5>Café Geisha - $3.99</h5>
+                    <p>El café Geisha es una variedad de alta gama originaria de Etiopía, famosa por su perfil aromático floral y afrutado.</p>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="fotos/Café robusta.png" alt="Café robusta">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                  <h5>Café robusta - $5.50</h5>
+                  <p>El café robusta se caracteriza por su sabor fuerte, amargo y alto contenido de cafeína.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="fotos/Capuchino.png" alt="Capuchino">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                  <h5>Cafe capuchino Artesanal- $5.46</h5>
+                  <p>El café capuchino es una bebida italiana clásica elaborada con partes iguales de espresso, leche caliente y espuma de leche</p>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselProductos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselProductos" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de productos individuales (sin mover) -->
+      <div class="second">
+        <h2>PRODUCTOS</h2>
+
+        <div class="card" style="width: 18rem;">
+         <img src="fotos/Capuchino.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cafe capuchino Artesanal</h5>
+            <p class="card-text">El café capuchino es una bebida italiana clásica elaborada con partes iguales de espresso, leche caliente y espuma de leche</p>
+            <a href="parte de compra1.html" class="btn btn-primary">$5.46</a>
+          </div>
+        </div>
+
+       <div class="card" style="width: 18rem;">
+         <img src="fotos/Café robusta.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cafe Robusta</h5>
+            <p class="card-text">El café robusta se caracteriza por su sabor fuerte, amargo y alto contenido de cafeína.</p>
+            <a href="parte de compra2.html" class="btn btn-primary">$4.46</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+         <img src="fotos/cafe.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Café Geisha</h5>
+            <p class="card-text">El café Geisha es una variedad de alta gama originaria de Etiopía, famosa por su perfil aromático floral y afrutado</p>
+            <a href="parte de la compra3.html" class="btn btn-primary">$3.99</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pie de página -->
+    <footer>
+      <h4 class="mb-3">📍 Información de contacto</h4>
+
+          <p><strong>Dirección:</strong> Barrio Guadalupe, frente a la iglesia, León, Nicaragua</p>
+          <p><strong>Horario de atención:</strong> Lunes a sábado, 7:00 AM – 6:00 PM</p>
+          <p><strong>Teléfono:</strong> +505 5769-0090</p>
+
+          <div class="redes-sociales mt-3">
+            <a href="https://www.facebook.com/share/16DaXWBGgm/" target="_blank" class="btn btn-outline-primary me-2">
+              <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/cris_espinoza_191?igsh=MWxqNW9icmszeDJ2Mg==" target="_blank" class="btn btn-outline-danger me-2">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/50557690090" target="_blank" class="btn btn-outline-success">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+      <p>&copy; 2025 Christopher Dev. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>  

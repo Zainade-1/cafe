@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Mi pagina web</title>
+        <link rel="stylesheet" href="Carpeta para los diseños/pagina del for.css" type="text/css"/>
+        <meta charset="UTF-8">
+    </head>
+       
+    <nav>
+            <ul class="navegacion">
+                <button><a href="Pagina principal.html" class="color1">Pagina principal</a></button>
+                <button><a href="Pagina2.html" class="color1">Sobre nosotros</a></button>
+                <button><a href="cafeteria.html" class="color1">Emprendimiento</a></button>
+                <button><a href="index.html" class="color1">Cafeteria</a></button>
+                <p></p>
+            </ul>
+    </nav>
+
+    <header>
+
+        <h1>
+          Formulario
+        </h1>
+
+    </header>
+    
+    <form action="send.php" method="POST">
+     <label for="name">Nombre:</label><br>
+     <input type="text" id="name" name="name" required><br><br>
+
+     <label for="email">Correo electrónico:</label><br>
+     <input type="email" id="email" name="email" required><br><br>
+
+     <label for="message">Mensaje:</label><br>
+     <textarea id="message" name="message" rows="4" required></textarea><br><br> 
+
+     <input type="submit" value="Enviar">
+    </form>
+    
+</html>

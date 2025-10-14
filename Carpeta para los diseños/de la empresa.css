@@ -1,0 +1,211 @@
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+  background-color: #D2A679;
+  background-blend-mode: lighten;
+
+  color: black;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #7b4b2a;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+nav a {
+  color: #D2A679;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;       /* Centra verticalmente */
+  gap: 500px;                 /* Espacio entre imagen y título */
+}
+
+.img {
+  width: 100px;              /* Ajusta el tamaño del logo */
+  height: auto;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+/* Contenido principal */
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+/* Cuadros de texto */
+.cuadro {
+  background-color: #f4e1c6; /* crema */
+  border: 1px solid #c3a384;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.art { width: 60%; }
+.second { width: 35%; }
+
+/* Contenedor principal de productos */
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Puedes cambiar a flex-start o flex-end si quieres alinearlas a la izquierda o derecha */
+  padding: 40px 20px;
+  background-color: #D2A679; /* Fondo suave */
+}
+
+/* Tarjetas de producto */
+.second .card {
+  border: 1px solid #d2b48c; /* Borde café claro */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fffaf5;
+}
+
+/* Efecto al pasar el mouse */
+.second .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.second .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Título del producto */
+.second .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7b4b2a;
+}
+
+/* Descripción del producto */
+.second .card-text {
+  font-size: 0.95rem;
+  color: #4a3b2d;
+}
+
+/* Botón de compra */
+.second .btn-primary {
+  background-color: #7b4b2a;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.second .btn-primary:hover {
+  background-color: #5a2f1c;
+}
+
+/* Pie de página */
+footer {
+  background-color: #7b4b2a;
+  color: #fffaf0;
+  padding: 8px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 30px auto;
+  font-size: 14px;
+}
+/* 🎞️ Carrusel general */
+#carruselProductos {
+  max-width: 100%;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/*Imágenes del carrusel */
+#carruselProductos .carousel-item img {
+  width: 750px;
+  height: 640px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Texto superpuesto sin fondo ni borde */
+#carruselProductos .carousel-caption {
+  width: 300px;
+  margin: 10px auto 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: white; /* texto limpio y visible sobre fondo claro */
+  background: none;
+  border: none;
+}
+
+/* 🎯 Botones de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #7b4b2a;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  #carruselProductos .carousel-item img {
+    width: 90%;
+    height: auto;
+  }
+
+  #carruselProductos .carousel-caption {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+.info-contacto {
+  background-color: #fdf6f0;
+  border-top: 2px solid #d2a679;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #4a3b2d;
+}
+
+.info-contacto h4 {
+  color: #7b4b2a;
+  font-weight: bold;
+}
+
+.info-contacto p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.redes-sociales .btn {
+  font-weight: 600;
+  border-radius: 8px;
+}

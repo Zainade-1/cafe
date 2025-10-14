@@ -1,0 +1,68 @@
+/* Fondo general */
+body {
+  background-color: #fdfaf6;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3e3e3e;
+}
+
+/* Título principal */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #6f4e37; /* tono café */
+}
+
+/* Tarjeta del producto */
+.card {
+  border: 1px solid #e0dcd3;
+  background-color: #fffdf9;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #6f4e37;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Imagen del producto */
+.card img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Etiquetas del formulario */
+.form-label {
+  font-weight: 600;
+  color: #5a4632;
+}
+
+/* Campos del formulario */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #d6cfc2;
+  font-size: 0.95rem;
+}
+
+/* Botón de confirmación */
+.btn-success {
+  background-color: green;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.btn-success:hover {
+  background-color: red;
+}
+
+/* Total a pagar */
+.fs-5 {
+  color: black;
+  font-weight: bold;
+}
