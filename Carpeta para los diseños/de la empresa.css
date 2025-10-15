@@ -32,7 +32,8 @@ nav a {
 .encabezado {
   display: flex;
   align-items: center;       /* Centra verticalmente */
-  gap: 500px;                 /* Espacio entre imagen y título */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 50px;                 /* Espacio entre imagen y título */
 }
 
 .img {
